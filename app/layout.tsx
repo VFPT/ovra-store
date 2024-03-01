@@ -1,4 +1,4 @@
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
 import ModalProvider from '@/providers/modal-provider'
 import ToastProvider from '@/providers/toast-provider'
@@ -7,11 +7,11 @@ import Footer from '@/components/footer'
 
 import './globals.css'
 
-const font = Urbanist({ subsets: ['latin'] })
+const font = Poppins({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Store',
-  description: 'Store - The place for all your purchases.',
+  title: 'OVRA STORE',
+  description: 'Ovra Store - The Best Game Coins Store. We are dedicated to providing the best service for buying and selling products online, assisting the buyer at any moment.',
 }
 
 export default function RootLayout({
@@ -21,12 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
-        <ToastProvider />
-        <ModalProvider />
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={font.className}>          
+      <ToastProvider />
+      <ModalProvider />
+      <Navbar />
+      {children}
+      <Footer />
       </body>
     </html>
   )
