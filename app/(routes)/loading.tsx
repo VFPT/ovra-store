@@ -6,7 +6,7 @@ const Loading = () => {
     <Container>
       <div className="w-full h-full p-8">
         <Skeleton className="w-full aspect-square rounded-xl md:aspect-[4/1]" />
-        <Skeleton className="mt-12 w-full aspect-square rounded-xl md:aspect-[13/1]" />
+        <Skeleton className="mt-8 w-full aspect-square rounded-xl md:aspect-[13/1]" />
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <Skeleton className="aspect-square rounded-xl" />
           <Skeleton className="aspect-square rounded-xl" />
